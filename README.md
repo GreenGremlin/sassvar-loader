@@ -1,4 +1,4 @@
-# Sass variable loader module for webpack
+# Sass variable loader for webpack
 
 ### Installation
 

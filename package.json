@@ -4,7 +4,7 @@
   "author": {
     "name": "Jonathan Felchlin"
   },
-  "description": "Sass variable loader module for webpack",
+  "description": "Sass variable loader for webpack",
   "files": [
     "index.js"
   ],
