@@ -1,5 +1,5 @@
 {
-  "name": "sassvar-loader",
+  "name": "sassvars-loader",
   "version": "0.1.0",
   "author": {
     "name": "Jonathan Felchlin"
@@ -13,9 +13,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GreenGremlin/sassvar-loader.git"
+    "url": "git+https://github.com/GreenGremlin/sassvars-loader.git"
   },
   "bugs": {
-    "url": "https://github.com/GreenGremlin/sassvar-loader.git/issues"
+    "url": "https://github.com/GreenGremlin/sassvars-loader.git/issues"
   }
 }

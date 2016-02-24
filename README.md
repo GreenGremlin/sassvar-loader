@@ -2,7 +2,7 @@
 
 ### Installation
 
-`npm install sassvar-loader --save-dev`
+`npm install sassvars-loader --save-dev`
 
 ## Usage
 
@@ -12,10 +12,10 @@
 
 #### query string variables
 ``` javascript
-var webpackConfig = {
+const webpackConfig = {
     module: {
         loaders:[
-            {test: /.scss$/, loader: "style!css!sass!sassvar?base_fontsize=16px"}
+            { test: /.scss$/, loader: "style!css!sass!sassvars?base_fontsize=16px" }
         ]
     },
 }
@@ -23,16 +23,16 @@ var webpackConfig = {
 ```
 **Output SCSS**
 ``` scss
-$base_fontsize: 16px;
+$base_fontsize:16px;
 ```
 
 #### variables from a json file
 ``` javascript
-var sassVars = 'path/to/your/vars.json';
-var webpackConfig = {
+const sassJsonPath = 'path/to/your/vars.json';
+const webpackConfig = {
     module: {
         loaders:[
-            {test: /.scss$/, loader: "style!css!sass!sassvar?path="+ sassVars}
+            { test: /.scss$/, loader: `style!css!sass!sassvars?path=${sassJsonPath}` }
         ]
     },
 }
