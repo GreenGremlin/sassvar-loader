@@ -1,14 +1,8 @@
-# json to sass loader for webpack
-
-### 0.1.8 Changes
-- **Flagged as cacheable**
-- **Simpler implementation** (See Example Config)
-- **Marked dependencies** (triggers build on webpack watch and webpack-dev-server when vars file is changed)
-
+# Sass variable loader module for webpack
 
 ### Installation
 
-`npm install jsontosass-loader --save-dev`
+`npm install sassvar-loader --save-dev`
 
 ## Usage
 
@@ -16,12 +10,29 @@
 
 ### Example config
 
+#### query string variables
+``` javascript
+var webpackConfig = {
+    module: {
+        loaders:[
+            {test: /.scss$/, loader: "style!css!sass!sassvar?base_fontsize=16px"}
+        ]
+    },
+}
+
+```
+**Output SCSS**
+``` scss
+$base_fontsize: 16px;
+```
+
+#### variables from a json file
 ``` javascript
 var sassVars = 'path/to/your/vars.json';
 var webpackConfig = {
     module: {
         loaders:[
-            {test: /.scss$/, loader: "style!css!sass!jsontosass?path="+ sassVars}
+            {test: /.scss$/, loader: "style!css!sass!sassvar?path="+ sassVars}
         ]
     },
 }
@@ -46,8 +57,7 @@ $breakpoints:(portraitS:320px,portraitM:360px,portraitL:414px);
 $localNavHeight:50px;
 ```
 
-
-Forked from gist: [jsonToSassVars](https://gist.github.com/Kasu/ea4f4861a81e626ea308) and [prepend-loader](https://gist.github.com/Kasu/29452051023ff5337bd7)
+Forked from: [jsontosass-loader](https://github.com/EdwardIrby/jsontosass-loader)
 
 ## License
 

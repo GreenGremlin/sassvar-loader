@@ -1,10 +1,10 @@
 {
-  "name": "jsontosass-loader",
-  "version": "0.1.8",
+  "name": "sassvar-loader",
+  "version": "0.1.0",
   "author": {
-    "name": "Edward Irby @edwardirby"
+    "name": "Jonathan Felchlin"
   },
-  "description": "jsonToSass loader module for webpack",
+  "description": "Sass variable loader module for webpack",
   "files": [
     "index.js"
   ],
@@ -13,9 +13,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EdwardIrby/jsontosass-loader.git"
+    "url": "git+https://github.com/GreenGremlin/sassvar-loader.git"
   },
   "bugs": {
-    "url": "https://github.com/EdwardIrby/jsontosass-loader.git/issues"
+    "url": "https://github.com/GreenGremlin/sassvar-loader.git/issues"
   }
 }
